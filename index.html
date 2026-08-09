@@ -3,69 +3,162 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI ClipForge — AI-Powered Short-Form Video Clipping</title>
-  <meta name="description" content="AI ClipForge turns long-form videos into short-form vertical clips with captions, formatting, and publishing preparation.">
+  <title>AI ClipForge — Keep the moment. Cut the rest.</title>
+  <meta name="description" content="AI ClipForge scans long video for the seconds worth keeping, then cuts, captions, and formats them into vertical clips. You make the final cut.">
   <link rel="icon" href="icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.className+=' js';</script>
 </head>
 <body>
-  <header class="nav">
-    <a class="brand" href="index.html"><img src="icon.png" alt="AI ClipForge icon"> AI ClipForge</a>
+  <div class="topbar">
+    <a class="brand" href="index.html"><img src="icon.png" alt="AI ClipForge"> AI ClipForge</a>
     <nav>
-      <a href="#features">Features</a>
-      <a href="#how">How it works</a>
+      <a href="#signal">What it does</a>
+      <a href="#cutlist">How it works</a>
       <a href="privacy.html">Privacy</a>
       <a href="terms.html">Terms</a>
     </nav>
-  </header>
+    <span class="timecode">REC · 09:16</span>
+  </div>
 
   <main>
-    <section class="hero">
-      <div>
-        <span class="badge">AI-POWERED VIDEO CLIPPING</span>
-        <h1>Turn long videos into <span>short-form clips.</span></h1>
-        <p>AI ClipForge finds engaging moments, creates vertical videos, adds captions, and prepares clips for social publishing.</p>
-        <a class="button" href="#how">See how it works</a>
+    <!-- HERO: the decisive cut -->
+    <section class="wrap hero">
+      <div class="hero-copy reveal">
+        <span class="eyebrow">Long recording → finished short</span>
+        <h1>Keep the moment.<br><span class="hl">Cut the rest.</span></h1>
+        <p class="lede">AI ClipForge scans hours of footage for the seconds worth keeping, then cuts, captions, and formats them into vertical clips. You make the final cut.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#cutlist">See the cut list →</a>
+          <a class="btn-line" href="#signal">What it actually does</a>
+        </div>
       </div>
-      <div class="hero-card">
-        <div class="play">▶</div>
-        <strong>From video → ready-to-post clip</strong>
-        <p>Find • Cut • Caption • Format • Prepare</p>
+
+      <div class="stage reveal">
+        <div class="stage-frame">
+          <div class="stage-grid"></div>
+          <div class="stage-meta">SOURCE · 23:14</div>
+          <div class="stage-subject"></div>
+          <div class="playhead"></div>
+          <div class="stage-out">CLIP<br>0:38</div>
+        </div>
+        <div class="timeline">
+          <div class="lab"><span>01 / 04 — SELECTION</span><span>23:14 TOTAL</span></div>
+          <div class="track">
+            <span class="tick" style="left:12%"></span><span class="tick" style="left:40%"></span><span class="tick" style="left:64%"></span><span class="tick" style="left:86%"></span>
+            <span class="sel"></span>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="features" class="section">
-      <span class="eyebrow">FEATURES</span>
-      <h2>Everything you need to clip faster.</h2>
-      <div class="grid">
-        <article><h3>AI Clip Detection</h3><p>Analyzes transcripts and identifies moments that are likely to be engaging.</p></article>
-        <article><h3>Animated Captions</h3><p>Creates readable, word-by-word captions for short-form video.</p></article>
-        <article><h3>Vertical Formatting</h3><p>Converts clips to a mobile-friendly vertical format.</p></article>
-        <article><h3>Publishing Preparation</h3><p>Organizes finished videos and metadata for social publishing workflows.</p></article>
+    <!-- SIGNAL vs NOISE -->
+    <section class="wrap" id="signal">
+      <div class="chapter">
+        <div class="label reveal"><span class="n">01</span> Find the moment</div>
+        <div class="reveal">
+          <span class="eyebrow">Signal versus noise</span>
+          <h2 style="font-size:clamp(2rem,4vw,3.4rem);margin:12px 0 32px;max-width:18ch">Most of a recording isn't the clip. We show you which part is.</h2>
+          <div class="filmstrip">
+            <div class="frame dim"><span class="idx">F01</span><span class="cap">00:02 · setup</span><span class="rej">repetition</span></div>
+            <div class="frame dim"><span class="idx">F02</span><span class="cap">00:41 · silence</span><span class="rej">low energy</span></div>
+            <div class="frame dim"><span class="idx">F03</span><span class="cap">03:18 · B-roll</span><span class="rej">no hook</span></div>
+            <div class="frame sel"><span class="idx">F04</span><span class="cap">04:52 · the turn</span></div>
+            <div class="frame dim"><span class="idx">F05</span><span class="cap">11:07 · tangent</span><span class="rej">off-topic</span></div>
+            <div class="frame dim"><span class="idx">F06</span><span class="cap">19:33 · outro</span><span class="rej">wind-down</span></div>
+          </div>
+          <div class="notes">
+            <div><b>Moment detection</b>Scans transcript and pacing for segments likely to land.</div>
+            <div><b>Reframing</b>Recomposes each moment for a 9:16 frame.</div>
+            <div><b>Captions</b>Word-by-word timing, styled for vertical.</div>
+            <div><b>Pacing</b>Holds rhythm; trims dead air.</div>
+            <div><b>Export</b>Clip + metadata, ready to publish.</div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="how" class="section dark">
-      <span class="eyebrow">HOW IT WORKS</span>
-      <h2>A simple workflow.</h2>
-      <div class="steps">
-        <div><b>01</b><h3>Analyze</h3><p>AI reads the video's transcript and finds promising moments.</p></div>
-        <div><b>02</b><h3>Edit</h3><p>Clips are cut, formatted vertically, and captioned.</p></div>
-        <div><b>03</b><h3>Prepare</h3><p>Finished clips and metadata are organized for publishing.</p></div>
+    <!-- CUT LIST spine -->
+    <section class="wrap" id="cutlist">
+      <div class="reveal" style="margin-bottom:40px">
+        <span class="eyebrow">The cut list</span>
+        <h2 style="font-size:clamp(2rem,4vw,3.4rem);margin-top:12px;max-width:16ch">One source. A straight line to a clip.</h2>
+      </div>
+      <div class="spine" style="position:relative">
+        <div class="spine-playhead" id="spineHead"></div>
+        <div class="step reveal"><div class="tc">IN 00:00:00:00</div><h3>Ingest</h3><p>Your long video enters the project. Nothing is posted, nothing leaves your control.</p><div class="artifact">▸ 23:14 source loaded · 1 track · awaiting analysis</div></div>
+        <div class="step reveal"><div class="tc">IN 00:00:03:11</div><h3>Read</h3><p>The transcript and pacing are read to locate promising segments. Ranked, not auto-selected.</p><div class="artifact">▸ 6 candidate moments · confidence sorted</div></div>
+        <div class="step active reveal"><div class="tc">IN 00:00:04:52</div><h3>Select</h3><p>You choose the moment. The range detaches from the timeline and becomes the clip.</p><div class="artifact">▸ SELECTED 04:52 → 05:30 · "the turn"</div></div>
+        <div class="step reveal"><div class="tc">IN 00:00:05:30</div><h3>Shape</h3><p>Trimmed, reframed to vertical, and captioned with timed, readable text.</p><div class="artifact">▸ 0:38 · 9:16 · captions locked</div></div>
+        <div class="step reveal"><div class="tc">OUT 00:00:24:12</div><h3>Deliver</h3><p>Clip and metadata are organized for your publishing workflow. You publish when you choose.</p><div class="artifact">▸ READY FOR VERTICAL · export queued</div></div>
       </div>
     </section>
 
-    <section class="section">
-      <span class="eyebrow">ABOUT</span>
-      <h2>Built for creators.</h2>
-      <p class="wide">AI ClipForge is a creator-focused video workflow tool. It helps turn long-form content into short-form clips while keeping the creator in control of the final content and publishing decisions.</p>
+    <!-- CONTROL band -->
+    <section class="control">
+      <div class="wrap">
+        <div class="split">
+          <div class="reveal">
+            <span class="eyebrow">What stays under your control</span>
+            <h2>One recording. Three different clips. Your call on each.</h2>
+            <div class="assurances">
+              <div><span class="dot">▸</span><span>You review every selection before a clip is built.</span></div>
+              <div><span class="dot">▸</span><span>No auto-posting. Publishing stays your decision.</span></div>
+              <div><span class="dot">▸</span><span>Your footage is source material, not training material.</span></div>
+            </div>
+          </div>
+          <div class="reel reveal">
+            <div class="clip hot">HOOK<br>0:09</div>
+            <div class="clip">INSIGHT<br>0:22</div>
+            <div class="clip">REACTION<br>0:14</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA closing frame -->
+    <section class="wrap cta">
+      <span class="timecode">OUT 00:00:24:12</span>
+      <div class="reveal">
+        <h2>Somewhere in your footage is the clip.<br><span class="hl">Find it. Finish it. Publish it.</span></h2>
+        <div class="hero-actions">
+          <a class="btn" href="#cutlist">Make the cut →</a>
+          <a class="btn-line" href="privacy.html">Read the privacy stance</a>
+        </div>
+      </div>
+      <div class="paused">PAUSED · 09:16</div>
     </section>
   </main>
 
   <footer>
-    <div><strong>AI ClipForge</strong><p>AI-powered short-form video workflow.</p></div>
-    <div class="footer-links"><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></div>
-    <p class="copyright">© 2026 AI ClipForge. Not affiliated with TikTok or ByteDance.</p>
+    <div class="slate">
+      <div class="brand">AI ClipForge<p>Edit-decision software for short-form video</p></div>
+      <div class="cols">
+        <div>
+          <a href="#signal">Product</a>
+          <a href="#cutlist">How it works</a>
+        </div>
+        <div>
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+        </div>
+      </div>
+    </div>
+    <div class="export-status">AI CLIPFORGE / READY FOR VERTICAL / 09:16</div>
   </footer>
+
+  <script>
+    const io = new IntersectionObserver((e)=>{e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.12});
+    document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+    // traveling playhead down the cut-list spine
+    const spine=document.querySelector('.spine'), head=document.getElementById('spineHead');
+    if(spine&&head&&!matchMedia('(prefers-reduced-motion: reduce)').matches){
+      const onScroll=()=>{const r=spine.getBoundingClientRect();const vh=innerHeight;let p=(vh*0.5-r.top)/(r.height);p=Math.max(0,Math.min(1,p));head.style.height=(p*spine.offsetHeight)+'px';};
+      addEventListener('scroll',onScroll,{passive:true});onScroll();
+    }
+  </script>
 </body>
 </html>
